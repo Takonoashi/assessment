@@ -83,36 +83,3 @@ function assessment(userName) {
     result = result.replaceAll('###userName###', userName);
     return result;
 }
-
-// テストを行う関数
-function test() {
-    console.log('診断結果の文章のテスト');
-
-  //太郎
-    console.log('太郎');
-    console.assert(
-        assessment('太郎') ===
-        '太郎のいいところは決断力です。太郎がする決断にいつも助けられる人がいます。',
-        '診断結果の文言の特定の部分を名前に置き換える処理が正しくありません。'
-    );
-
-  //次郎
-    console.log('次郎');
-    console.assert(
-        assessment('次郎') ===
-        '次郎のいいところは自制心です。やばいと思ったときにしっかりと衝動を抑えられる次郎が皆から評価されています。',
-        '診断結果の文言の特定の部分を名前に置き換える処理が正しくありません。'
-    );
-
-  //花子
-    console.log('花子');
-    console.assert(
-        assessment('花子') ===
-        '花子のいいところはまなざしです。花子に見つめられた人は、気になって仕方がないでしょう。',
-        '診断結果の文言の特定の部分を名前に置き換える処理が正しくありません。'
-    );
-    
-    console.log('診断結果の文章のテスト終了');
-}
-
-test();
